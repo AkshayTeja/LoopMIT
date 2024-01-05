@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.min.css" rel="stylesheet" >
+    <link rel="icon" type="image/x-icon" href="assets/Loop Logo Purple Square.png">
+    <title>LoopMIT</title>
+    <style>
+        .navbar-custom
+        {
+            height: 80px;
+        }
+        .overview
+        {
+          background-color: black;
+        }
+        .hero
+        {
+          position: relative;
+        }
+        .hero video
+        {
+          height: auto;
+          width: 100%;
+          background-position: absolute;
+          z-index:10;
+          object-fit: cover;
+        }
+        .university
+        {
+          position: relative;
+        }
+        .university img
+        {
+          height: auto;
+          width: 100%;
+          background-position: absolute;
+          z-index:10;
+          object-fit: cover;
+
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <!--Navbar--> 
+    <nav class="navbar navbar-expand navbar-custom navbar-expand-lg navbar-dark bg-dark sticky-top py-0">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/Loop Logo White.png" alt="LoopMIT" class="src mx-5" style="width: 100px; height: 100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="#">HOME</a>
+            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="team.html">TEAM</a>
+            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="#">CONTACT US</a>
+          </div>
+        </div>
+      </nav>   
+    
+      <!--Video-->
+      <div class="hero">
+          <video class="object-fit-contain" autoplay loop muted>
+            <source src="assets/Loop Video.mp4" type="video/mp4" />
+          </video>
+      </div>
+      
+      <div class="row">
+        <div class="col my-4"></div>
+      </div>
+      <div class="row"></div>
+
+      <!--Overview-->
+      <section class="overview">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <h1 class="text-purple text-center my-4">ABOUT US</h1>
+            <h3 class="text-white text-center my-5">Founded in 2019, Loop MIT is the Official Hyperloop Student Project Team of MIT, Manipal.<br></h3>
+          <p class="text-white text-center my-5 fw-bolder">
+            We are a group of highly motivated students looking to make the fifth mode of transportation a reality! With a relentless focus on sustainability, speed, and safety, we are contributing towards developing high-speed, sustainable mobility solutions.
+            <br>
+            We have cleared the first rounds of the prestigious European Hyperloop Week (EHW) in the years 2022 and 2023, which were held in Europe.
+            <br>
+            Currently making our prototype hyperloop pod, we aim to revolutionize global transportation.</p>
+          </div>   
+          <div class="col-2"></div>
+        </div>
+      </section> 
+
+      <div class="row">
+        <div class="col my-5"></div>
+      </div>
+      <div class="row"></div>
+
+      <!--Manipal-->
+      <section class="university">
+        <div class="row my-4">
+          <h1 class="text-purple text-center my-3">OUR UNIVERSITY</h1>
+          <div class="col-1"></div>
+          <div class="col-md-5">  
+            <p class="text-white text-start fw-bolder my-5 mx-5">MAHE Manipal is one of India's leading academic and research institutions. It has been granted Institution of Eminence status by the Ministry of Education, Government of India.<br>
+              Ever since the foundation in 1953, we have applied our research efforts to develop scientific knowledge with an emphasis on interdisciplinary research and engagement with wider research community.<br>
+              Communication, Leadership, Teamwork, Problem Solving, Planning, Motivation and Enthusiasm, Adaptability, Flexibility, and Ability to Build Relationships, all 
+              mandate engineering education to be experiential, practical, relevant, and up to date. Keeping this in mind, as an experiment, in 2007, 
+              the Institute came up with the idea of Major Student Projects, wherein, the institute provides infrastructure to build a technical project to compete in national & international competitions. Currently, there are 24 Major Student Project Teams operating in MIT campus and we are proud to be one of them.
+            </p>
+          </div>   
+          <div class="col-md-5 mt-5">
+            <img src="/assets/ManipalUni.jpg" alt="Manipal University" class="src manipaluniversity">
+          </div>
+        </div>
+      </section> 
+
+      <!--Footer-->
+      <div class="bg-dark">
+        <div class="row justify-content-center">
+          <div class="col-2 text-white my-4">
+            <h5>Connect With Us :</h5>
+          </div>
+          <div class="col-1 my-2">
+            <a href="https://www.instagram.com/loopmit/" target="_blank">
+              <img src="assets/Instagram.png" alt="Instagram" style="width: 56px;height: 56px;">
+            </a>
+          </div>
+          <div class="col-1 my-2">
+            <a href="https://www.linkedin.com/company/loopmit" target="_blank">
+              <img src="assets/LinkedIn.png" alt="LinkedIn" style="width: 56px;height: 56px;">
+            </a>
+          </div>
+          <div class="col-1 my-2">
+            <a href="https://linktr.ee/loopmanipal" target="_blank">
+              <img src="assets/LinkTree.png" alt="LinkTree" style="width: 56px;height: 56px;">
+            </a>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
