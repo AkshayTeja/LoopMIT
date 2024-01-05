@@ -1,2 +1,2 @@
 # LoopMIT
-Github Repo for LoopMIT's Website
+Github Repository for LoopMIT's Website
