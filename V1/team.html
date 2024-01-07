@@ -5,12 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/main.min.css" rel="stylesheet" >
     <link rel="icon" type="image/x-icon" href="assets/Loop Logo Purple Square.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>LoopMIT</title>
     <style>
         .navbar-custom
         {
             height:80px;
         }
+        body{
+    background-color: #000;
+
+}
+.team-area{
+    padding-top: 5%;
+}
+.single-team{
+  box-shadow:0px 7px 7px 2px rgba(0,0,0,0.1);
+    background-color: white;
+    margin-bottom: 10px;
+  margin-left:10px;
+ 
+}
+.single-team:hover .social{
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.img-area{
+    overflow: hidden;
+    position: relative;
+}
+.img-area img{
+    width: 100%;
+}
+.img-area:hover img{
+    transform: scale(1.2)
+}
+.img-area img{
+    transition: all 0.4s ease 0s;
+}
+@media (max-width: 768px){
+    .img-area img{
+        display: inline-block;
+    }
+}
+.img-area .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.img-area .social ul{
+    text-align: center;
+    position: relative;
+    top: 175px;
+}
+.img-area .social ul li a{
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.img-area .social ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid transparent;
+}
+.img-text{
+    padding: 25px;
+    color: black;
+    text-align: center;
+}
+.img-text h4{
+    margin: 0 0 5px;
+    font-size: 30px;
+   font-family: sans-serif;
+    letter-spacing: 5px;
+}
+.img-text h5{
+    font-size: 17px;
+    color: #545154
+
+}
+          
     </style>
 </head>
 
@@ -18,7 +106,7 @@
     <!--Navbar--> 
     <nav class="navbar navbar-expand navbar-custom navbar-expand-lg navbar-dark bg-dark sticky-top py-0">
         <a class="navbar-brand" href="#">
-            <img src="/assets/Loop Logo White.png" alt="LoopMIT" class="src mx-5" style="width: 100px; height: 100px">
+            <img src="/V1/Assets/Loop Logo White.png" alt="LoopMIT" class="src mx-5" style="width: 100px; height: 100px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,8 +115,68 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="index.html">HOME</a>
             <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="team.html">TEAM</a>
-            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="#">CONTACT US</a>
           </div>
         </div>
-      </nav>   
+      </nav>  
+      
+      <!--Team Members-->
+      <div class="team-area">
+        <div class="container">
+          <h1 class="text-purple text-center mb-5">THE BOARD</h1>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="single-team">
+                <div class="img-area">
+                  <img src="/V1/Assets/TEDx Pic.jpeg" class="img-responsive" alt="">
+                  <div class="social">
+                    <ul class="list-inline">
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-text">
+                  <h4>John Doe</h4>
+                  <h5>Web Designer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="single-team">
+                <div class="img-area">
+                  <img src="https://1.bp.blogspot.com/-cISC5xoywEA/YRleZqupHzI/AAAAAAAACZE/w7jfz6BTGf4IJv9kV-ijNP3kKxW3JpZXQCNcBGAsYHQ/s0/3%2B%25282%2529.jpg" class="img-responsive" alt="">
+                  <div class="social">
+                    <ul class="list-inline">
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-text">
+                  <h4>Alex Wood</h4>
+                  <h5>Apps Developer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="single-team">
+                <div class="img-area">
+                  <img src="https://1.bp.blogspot.com/-cGZY1xJjPNc/YRleZmEbEHI/AAAAAAAACZA/P-WOeYZegAQdUCF66C0E1ZF4zMEzaUvggCNcBGAsYHQ/s0/3%2B%25281%2529.jpg" class="img-responsive" alt="">
+                  <div class="social">
+                    <ul class="list-inline">
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-text">
+                  <h4>Rosie Meg</h4>
+                  <h5>Game Developer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
