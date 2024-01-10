@@ -45,6 +45,28 @@
           z-index:10;
           object-fit: cover;
         }
+
+        .typing {
+        width: 22ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+        }
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} 
     </style>
 </head>
 <body style="background-color: black;">
@@ -79,7 +101,7 @@
         </div>
         <div class="d-flex justify-content-center align-items-center mb-3">
           <div class="bg-purple p-3 my-4 rounded-pill text-center" style="width: fit-content;">
-            <h3 class="text-white">Founded in 2018, Loop MIT is the Official Hyperloop Student Project Team of MIT, Manipal</h3>
+              <h3 class="text-white">Founded in 2018, Loop MIT is the Official Hyperloop Student Project Team of MIT, Manipal</h3>       
           </div>           
         </div>  
         <div class="d-flex justify-content-center align-items-center"> 
