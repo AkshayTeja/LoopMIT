@@ -9,9 +9,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Press+Start+2P&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <title>LoopMIT</title>
+    <style>
+        *
+      {
+        font-family: "Rubik";
+      }
+        .navbar-custom
+        {
+            height:80px;
+        }
+        .background
+        {
+            position: relative;
+        }
+        .background img
+        {
+          height: auto;
+          width: 100%;
+          background-position: absolute;
+          z-index:10;
+          object-fit: cover;
+        }
+    </style>
+    
 </head>
 
-<body>
+<body style="background-color: black;">
     <!--Navbar--> 
     <nav class="navbar navbar-expand navbar-custom navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">
@@ -22,17 +45,22 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="#">HOME</a>
+            <a class="nav-item nav-link mx-3 py-0 fw-bolder text-purple" href="index.html">HOME</a>
             <a class="nav-item nav-link ms-2 me-2 py-0 fw-bolder text-purple" href="team.html">TEAM</a>
             <a class="nav-item nav-link ms-2 me-4 py-0 fw-bolder text-purple" href="gallery.html">GALLERY</a>
           </div>
         </div>
       </nav>
+    
+      <div class="background">
+        <img src="../V1/Assets/WorkInProgress.png" alt="" class="object-fit-contain">
+
+      </div>
 
     
 
     <!--Footer-->
-    <div class="bg-dark">
+    <div class="bg-dark footer" >
         <div class="row justify-content-center">
           <div class="col-2 text-white my-4">
             <h5>Connect With Us :</h5>
