@@ -48,11 +48,11 @@
         }
         .card
         {
-          box-shadow: 0 0 2px 2px #8f00ff;
+          box-shadow: 0 0 1px 1px #8f00ff;
         }
         .title-text
         {
-          box-shadow: 0 0 2px 2px white;
+          box-shadow: 0 0 1px 1px white;
         }
 
         @media (max-width: 768px)
@@ -101,15 +101,15 @@
       </div>
       
       <!--Overview-->
-      <section class="overview p-4">
+      <section class="overview p-5">
         <div class="d-flex justify-content-center align-items-center mb-3">
-          <div class="bg-purple p-3 my-4 text-center title-text">
+          <div class="bg-purple p-3 mt-2 mb-3 text-center title-text">
               <h3 class="text-white fw-bolder fs-2">Founded in 2018, Loop MIT is the Official Hyperloop Student Project Team of MIT, Manipal</h3>       
           </div>           
         </div>  
-        <div class="d-flex justify-content-center align-items-center"> 
-          <div class=" title-body-text ps-5 pe-5">
-            <p class="text-white text-start fw-bolder mt-3 me-3 ms-3 fs-4" >
+        <div class=""> 
+          <div class=" title-body-text">
+            <p class="text-white text-start fw-bolder mt-4 me-4 ms-4 fs-4 " >
               We are a group of highly motivated students looking to make the fifth mode of transportation a reality! 
               With a relentless focus on sustainability, speed, and safety, we are contributing towards developing high-speed, 
               sustainable mobility solutions.
@@ -125,82 +125,88 @@
       </section> 
 
       <!--Subsystems-->
-      <section class="subsystems p-5">
+      <section class="subsystems pt-2 ps-4 pe-4 pb-4">
         <div class="container-lg">
-          <div class="d-flex justify-content-center align-items-center mb-4">
-            <h1 class="text-purple text-center mb-3 fw-bolder ">SUBSYSTEMS</h1>
+          <div class="d-flex justify-content-center align-items-center">
+            <h1 class="text-purple text-center fw-bolder">SUBSYSTEMS</h1>
           </div>
-            <div class="row justify-content-center mx-4 align-items-center ">
-              <div class="col-8 col-md-6 col-lg-3">
-                <div class="card bg-black border border-purple text-black mb-4" style="width: 18rem;">
-                  <div class="card-body text-center">
-                    <h3 class="card-title text-purple mb-2 fw-bold fs-3 text-center">MECHANICAL <i class="bi bi-tools text-purple"></i><br></h3>
-                    <div class="border border-white mb-3"></div>
-                    <p class="card-text text-start text-white">The mechanical subsystem of the hyperloop pod plays a fundamental role in ensuring the 
-                      overall functionality, safety, and performance of the vehicle. It encompasses a variety of components like the 
-                      aeroshell, chassis, braking system, lateral control module, and vertical stability system.<br><br>
-                      Together, these components work harmoniously to create a reliable and safe mechanical infrastructure, contributing to the 
-                      vehicle's optimal operation in its intended environment within a hyperloop system.</p>
-                  </div>
-                </div>
+        <div class="row mt-5 align-items-center justify-content-evenly">
+          <div class="col-10 col-lg-4 col-xl-3 mt-3" style="width: 600px;">
+            <div class="card bg-black border text-black mb-4">
+              <div class="card-body text-center py-4 px-3">
+                <h3 class="card-title text-purple mb-2 fw-bold fs-3 text-center">MECHANICAL <i class="bi bi-tools text-white"></i></h3>
+                <div class="border border-white mb-3"></div>
+                <p class="card-text text-start text-white fw-semibold">The mechanical subsystem of the hyperloop pod plays a fundamental role in ensuring the 
+                 overall functionality, safety, and performance of the vehicle. It encompasses a variety of components like the 
+                aeroshell, chassis, braking system, lateral control module, and vertical stability system.<br><br>
+                Together, these components work harmoniously to create a reliable and safe mechanical infrastructure, contributing to the 
+                vehicle's optimal operation in its intended environment within a hyperloop system.
+              <br><br></p>
               </div>
-    
-              <div class=" col-8 col-md-6 col-lg-3">
-                <div class="card bg-black border border-purple text-white mb-4" style="width: 18rem;">
-                  <div class="card-body text-center">
-                    <h3 class="card-title text-purple fw-bold mb-2">ELECTRONICS <i class="bi bi-lightning-fill text-white"></i><br></h3>
-                    <div class="border border-white mb-3"></div>
-                    <p class="card-text text-start">The electronics and electrical subsystem is responsible for managing power,
-                       using a Battery Management System (BMS), controlling various systems, using different sensors and ensuring effective connectivity between 
-                       different parts of the pod.
-                       <br>
-                       <br>
-                       Also, our Hyperloop communication system is centered around Raspberry Pi and ESP32, 
-                       enabling real-time updates through UART, Node.js, and Socket.io fused with wireless technology and antennas to enhance reliability.
-                      <br>
-                      <br>
-                      </p>
-                  </div>
-                </div>
+            </div>
+          </div>
+  
+          <div class="col-10 col-lg-4 col-xl-3 mt-3" style="width: 600px;">
+            <div class="card bg-black border text-black mb-4">
+              <div class="card-body text-center py-4 px-3">
+                <h3 class="card-title text-purple mb-2 fw-bold fs-3 text-center">ELECTRONICS <i class="bi bi-lightning-fill text-white"></i></h3>
+                <div class="border border-white mb-3"></div>
+                <p class="card-text text-start text-white fw-semibold">The electronics and electrical subsystem is responsible for managing power,
+                  using a Battery Management System (BMS), controlling various systems, using different sensors and ensuring effective connectivity between 
+                  different parts of the pod.
+                  <br>
+                  <br>
+                  Also, our Hyperloop communication system is centered around Raspberry Pi and ESP32, 
+                  enabling real-time updates through UART, Node.js, and Socket.io fused with wireless technology and antennas to enhance reliability.</p>
               </div>
-    
-              <div class="col-8 col-md-6 col-lg-3">
-                <div class="card bg-black border border-purple text-white mb-4" style="width: 18rem;">
-                  <div class="card-body text-center">
-                    <h3 class="card-title text-purple fw-bold">LEVITATION & PROPULSION <i class="bi bi-rocket-takeoff-fill text-white"></i></h3>
-                    <div class="border border-white mb-2"></div>
-                    <p class="card-text text-start">The propulsion system is crucial for achieving the unprecedented
-                       speeds and efficiency associated with this cutting-edge transportation concept. We use a meticulously engineered 
-                       single-sided linear induction motor, which is the driving force behind propelling the pod through a partial vacuum tube at high speeds.
-                        <br><br>
-                        The levitation departmentis responsible for maintaining the vehicle's elevation 
-                        above the track via magnetic levitation to lift the pod and keep it suspended during travel.
-                       </p>
-                  </div>
-                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-3 align-items-center justify-content-evenly">
+
+          <div class="col-10 col-lg-4 col-xl-3 mt-3" style="width: 600px;">
+            <div class="card bg-black border text-black mb-4">
+              <div class="card-body text-center py-4 px-3">
+                <h3 class="card-title text-purple mb-2 fw-bold fs-3 text-center">LEVITATION & PROPULSION <i class="bi bi-rocket-takeoff-fill text-white"></i></h3>
+                <div class="border border-white mb-3"></div>
+                <p class="card-text text-start text-white fw-semibold">The propulsion system is crucial for achieving the unprecedented
+                  speeds and efficiency associated with this cutting-edge transportation concept. We use a meticulously engineered 
+                  single-sided linear induction motor, which is the driving force behind propelling the pod through a partial vacuum tube at high speeds.
+                   <br><br>
+                   The levitation department is responsible for maintaining the vehicle's elevation 
+                   above the track via magnetic levitation to lift the pod and keep it suspended during travel.</p>
               </div>
-    
-              <div class="col-8 col-md-6 col-lg-3">
-                <div class="card bg-black border border-purple text-white mb-4" style="width: 18rem;">
-                  <div class="card-body text-center">
-                    <h4 class="card-title text-purple fw-bolder fs-3">MANAGEMENT <i class="bi bi-people-fill text-white"></i><br></h4>
-                    <div class="border border-white mb-2"></div>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat asperiores cum laudantium,
-                       porro sequi eaque reprehenderit sapiente, et accusantium qui numquam. 
-                       Velit facere debitis quaerat praesentium aliquam culpa voluptatem?</p>
-                  </div>
-                </div>
-              </div>        
-            </div> 
+            </div>
+          </div>  
+
+          <div class="col-10 col-lg-4 col-xl-3 mt-3" style="width: 600px;">
+            <div class="card bg-black border text-black mb-4">
+              <div class="card-body text-center py-4 px-3">
+                <h3 class="card-title text-purple mb-2 fw-bold fs-3 text-center">MANAGEMENT <i class="bi bi-people-fill text-white"></i></h3>
+                <div class="border border-white mb-3"></div>
+                <p class="card-text text-start text-white fw-semibold">
+                  The management subsystem plays a crucial role in overseeing and coordinating the other subsystems while
+                  ensuring that the team's objectives are met successfully on time, within budget via an organized and coordinated
+                  endeavor.
+
+                  <br><br>
+                  Our Graphic designers infuse creativity and visual appeal into the team's identity while the Web Developers 
+                  contribute their technical prowess to maintain an engaging and user-friendly online presence, showcasing the 
+                  team's achievements and enhancing accessibility. 
+                </p>
+              </div>
+            </div>
+          </div> 
         </div>
       </section> 
 
       <!--Manipal-->
       <section class="university">
-        <div class="mt-5" style="background-color: #6f2da8;">
-          <h1 class="text-white text-center mt-5 mb-2 pt-5 fw-bolder">OUR UNIVERSITY</h1>
+        <div class="mt-2" style="background-color: #6f2da8;">
+          <h1 class="text-white text-center mt-2 mb-2 pt-5 fw-bolder">OUR UNIVERSITY</h1>
           <div class="container">
-            <div class="row justify-content-start ms-2 gap-5 p-5">
+            <div class="row justify-content-start ms-2 gap-5 p-4">
               <div class="col-12 col-md-6 col-lg-6">
                 <p class="text-white text-start fw-bolder">MAHE Manipal is one of India's leading academic and research 
                   institutions. It has been granted Institution of Eminence status by the Ministry of Education, Government of India.<br>
@@ -214,8 +220,8 @@
                   Teams operating in MIT campus and we are proud to be one of them.
                 </p>
               </div>
-              <div class="col-12 col-md-6 col-lg-5 mt-2">
-                <img class="img-fluid manipal" src="../V1/Assets/ManipalUni.jpg" alt="Manipal University" style="width: 550px; height: 300px;">
+              <div class="col-12 col-md-6 col-lg-5 mb-5" style="position: relative;">
+                <img class="img-fluid manipal" src="../V1/Assets/ManipalUni.jpg" alt="Manipal University">
               </div> 
             </div>
           </div>
